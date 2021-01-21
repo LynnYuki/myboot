@@ -1,0 +1,9 @@
+spring: 
+  devtools:
+    restart:
+      #启动热部署
+      enabled: true
+      #设置修改时需要重启的目录
+      additioanal-paths: src/main/java
+      #设置修改不需要重启的目录
+      exclude: resources/**
