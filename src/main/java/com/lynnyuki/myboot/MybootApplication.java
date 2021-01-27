@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
 @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
-
+@EnableSwagger2
+@MapperScan(basePackages={"com.lynnyuki.myboot.dao.*"})
 public class MybootApplication {
 
 	public static void main(String[] args) {
